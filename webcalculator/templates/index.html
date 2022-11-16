@@ -1,0 +1,51 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="CodeHim">
+    <title>Calculator HTML Code Example</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<!-- Demo CSS (No need to include it into your project) -->
+	<link rel="stylesheet" href="{% static 'css/demo.css' %}">
+  
+  </head>
+  <body>
+
+ <main>
+     <!-- Start DEMO HTML (Use the following code into your project)-->
+     <div class="container calculator">
+    <div class="screen-item screen"> <span>screen</span></div>
+    <dl class="touche__box">
+      <dt class="clear-item"> <span>clear</span></dt>
+      <dt class="touche__box-item"> <span class="soustraction">{{operator.MINUS}}</span></dt>
+      <dt class="touche__box-item"><span class="sign">{{operator.PLUS}}</span></dt>
+      <dt class="touche__box-item clearme"> <span>{{num.SEVEN}}</span></dt>
+      <dt class="touche__box-item"> <span>{{num.EIGHT}}</span></dt>
+      <dt class="touche__box-item"> <span>{{num.SEVEN}}</span></dt>
+      <dt class="touche__box-item"><span class="sign">{{operator.DIV}}</span></dt>
+      <dt class="touche__box-item"> <span>{{num.FOUR}}</span></dt>
+      <dt class="touche__box-item"> <span>{{num.FIVE}}</span></dt>
+      <dt class="touche__box-item"> <span>{{num.SIX}}</span></dt>
+      <dt class="touche__box-item"><span class="sign">{{operator.MUL}}</span></dt>
+      <dt class="touche__box-item"> <span>{{num.ONE}}</span></dt>
+      <dt class="touche__box-item"> <span>{{num.TWO}}</span></dt>
+      <dt class="touche__box-item"> <span>{{num.THREE}}</span></dt>
+      <dt class="equal-item"><span class="sign-equal">{{operator.EQUAL}}</span></dt>
+      <dt class="touche__box-item zero-item"> <span>{{num.ZERO}}</span></dt>
+      <dt class="touche__box-item un-item"><span class="sign">{{operator.DOT}}</span></dt>
+    </dl>
+  </div>  
+ </main>
+ 
+      
+  <footer class="credit">Author: Athiqur rehman K R - Distributed By: <a title="Calculator project" href="https://www.testpress.tech/'" target="_blank">Testpress</a></footer>
+  
+  <script  src="{% static 'js/script.js' %}"></script>
+      
+  </body>
+</html>
